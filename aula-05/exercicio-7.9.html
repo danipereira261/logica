@@ -1,0 +1,26 @@
+
+
+<script src="/aula-04/exercicio-5.6-pegaNumero.js"></script>
+<script src="/arquivos/01/js/mostra.js"></script>
+
+
+
+<script>
+
+    var numeroSorteado = parseInt(Math.random() * 10)
+    var chute = pegaNumero ("Qual número você acha que foi sorteado?")
+
+    if (chute == numeroSorteado) {
+        (` mostra (Úal ! Você acertou! O numero sorteado era ${numeroSorteado})
+        `)
+    }
+
+    else {
+        mostra (` Você errou! O número sorteado era ${numeroSorteado}
+        `)
+        
+    }
+    
+
+    console.log(numeroSorteado)
+</script>

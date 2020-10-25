@@ -1,0 +1,16 @@
+if (condition) {
+  comando();
+}
+
+CONDIÇÃO => true ou false
+
+OPERADORES LÓGICOS
+==================
+
+>  MAIOR QUE
+<  MENOR QUE
+>= MAIOR OU IGUAL A
+<= MENOR OU IGUAL A
+== IGUALDADE
+!= DIFERENTE
+

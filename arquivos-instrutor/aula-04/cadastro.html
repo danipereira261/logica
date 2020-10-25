@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Produto</title>
+</head>
+<body>
+  <h1>Cadastro de Produto</h1>
+  <hr>
+
+  <div>
+    <label for="produto">Produto</label>
+    <input type="text" id="produto" maxlength="22" autofocus>
+    <br><br>
+  </div>
+
+  <div>
+    <label for="preco">Preço</label>
+    <input type="number" id="preco" placeholder="0.00" onblur="calcularTotal()">
+    <br><br>
+  </div>
+
+  <div>
+    <label for="qtde">Quantidade</label>
+    <input type="number" id="qtde" placeholder="000" onblur="calcularTotal()">
+    <br>
+  </div>
+
+  <hr>
+
+  <div>
+    <label for="total">Total</label>
+    <input type="text" id="total" placeholder="0.00" disabled>
+    <br><br>
+  </div>
+
+  <script src="cadastro.js"></script>
+
+</body>
+</html>

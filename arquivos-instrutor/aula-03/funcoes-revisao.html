@@ -1,0 +1,57 @@
+<meta charset="utf-8">
+<h1>Funções - Revisão</h1>
+<h2>Autor: Leonardo</h2>
+<hr>
+<script>
+
+// PascalCase
+// snake_case
+// camelCase - padrao JS
+
+// comando();
+// contexto.comando();
+// document.write();
+// console.log();
+
+function converterParaMaiuscula(txt = "") {
+  return txt.toUpperCase();
+}
+
+function converterParaMinuscula(txt = "") {
+  return txt.toLowerCase();
+}
+
+// INPUT: 2580 
+// OUTPUT: R$ 2580,00
+function converterParaMoeda(num = 0) {
+  return "R$ " + num.toFixed(2).replace(".", ",");
+}
+
+// INPUT: 5.59 / 10
+// OUTPUT: R$ 55,90
+function converterCambio(cambio = 0, valor = 0) {
+  return converterParaMoeda(cambio * valor);
+}
+
+// declarando a função
+function folhaDePgto() {
+  // entrada
+  var nome = prompt("Digite seu nome:");
+  var salarioEmDolar = prompt("Digite seu Salário US$:");
+  var cotacaoDoDia = prompt("Digite a cotação do dólar de hoje:");
+
+  // saída
+  // document.write("Nome: ", converterParaMaiuscula(nome), "<br>");
+  // document.write("Salário: ", converterCambio(cotacaoDoDia, salarioEmDolar));
+
+  document.write(`
+    Nome: ${converterParaMaiuscula(nome)}<br>
+    Salário: ${converterCambio(cotacaoDoDia, salarioEmDolar)}
+  `);
+  
+}
+
+// executando a função
+folhaDePgto();
+
+</script>

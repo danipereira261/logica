@@ -1,0 +1,41 @@
+
+function calcularIdade() {
+
+    var nome = campoNome.value
+    var peso = parseFloatBrasil(campoPeso.value)
+    var altura = parseFloatBrasil(campoAltura.value)
+
+
+    var dataNascimento = campoDataNascimento.value
+    var diaMesAnoNascimento = dataNascimento.split("/")
+    var diaNascimento = diaMesAnoNascimento[0]
+    var mesNascimento = diaMesAnoNascimento[1]
+    var anoNascimento = diaMesAnoNascimento[2]
+    var idade = calculaIdade(diaNascimento, mesNascimento, anoNascimento)
+
+
+
+    var temProblemasCardiacos = campoProblemasCardiacos.checked
+    var fraseAcompanhamentoMedico
+
+    if (temProblemasCardiacos) {
+        fraseAcompanhamentoMedico = "Necessita de acompanhamento médico"
+    }
+    if (!temProblemasCardiacos) {
+        fraseAcompanhamentoMedico = "NÃO necessita de acompanhamento médico"
+    }
+    mostra(`
+    <hr>
+    Nome: ${nome}
+    <br>
+    Peso: ${formataFloatBrasil(peso)} kg
+    <br>
+    Altura: ${formataFloatBrasil(altura)} m
+    <br>
+    Data de Nascimento: ${dataNascimento}
+    <br>
+    Idade: ${idade} anos
+    <br>
+    ${fraseAcompanhamentoMedico}
+    `)
+}

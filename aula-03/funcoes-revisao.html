@@ -1,0 +1,65 @@
+<meta charset="utf-8">
+<h1>Funções - Revisão</h1>
+<h2>Autora: Daniele</h2>
+<hr>
+<script>
+
+
+function converterParaMaiusculas(texto = ""){
+    
+    return texto.toUpperCase();
+
+
+}
+
+function converterParaMinusculas(texto = ""){
+    
+    return texto.toLowerCase();
+
+
+}
+
+// INPUT: 2580
+// OUTPUT: R$ 2580,00
+function converterParaMoeda(num = 0){
+    return "R$ " + num.toFixed(2).replace(".", ",");
+
+}
+
+function converterCambio(cambio = 0, valor = 0){
+    return converterParaMoeda (cambio * valor);
+
+}
+
+
+function folhaDePagto(){
+    var nome = prompt("Digite seu nome: ");
+    var salarioEmDolar = prompt("Digite seu salário U$$: ")
+    var cotacaoDoDia = prompt("Digite a cotação do dólar de hoje: ")
+
+    //document.write("Nome: ", converterParaMaiusculas(nome),"<br>");
+    //document.write("Salário: ", converterCambio(cotacaoDoDia, salarioEmDolar));
+document.write(`
+  Nome: ${converterParaMaiusculas(nome)}<br>
+  Salário: ${converterCambio(cotacaoDoDia,salarioEmDolar)}
+
+`);
+
+}
+folhaDePagto();
+
+
+//exercicios: 4.1, 4.4, 4.5, 4.8, 4.10, 4.11
+</script>
+
+
+
+
+
+
+
+
+
+
+
+

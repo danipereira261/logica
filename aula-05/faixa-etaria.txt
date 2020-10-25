@@ -1,0 +1,26 @@
+if (condition){
+
+}
+
+CONDIÇÃO => true ou false
+
+=====================
+OPERADORES COMPARAÇÃO
+=====================
+
+> MAIOR QUE
+< MENOR QUE
+>= MAIOR IGUAL A
+<= MENOR IGUAL A
+== IGUALDADE
+!= DIFERENTE
+
+operando >= operando
+
+===================
+OPERADORES LÓGICOS
+===================
+
+E - && (todas as condições verdadeiras para true)
+OU - || (apenas uma condição verdadeira para true)
+NÃO - ! (inversão lógica)
